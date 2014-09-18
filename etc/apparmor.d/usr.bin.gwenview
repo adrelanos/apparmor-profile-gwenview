@@ -1,0 +1,44 @@
+# Last Modified: Thu Sep 18 18:58:21 2014
+#include <tunables/global>
+
+/usr/bin/gwenview {
+  #include <abstractions/base>
+  #include <abstractions/kde>
+  #include <abstractions/gnome>
+
+  deny /etc/fstab r,
+  deny /etc/passwd r,
+  deny /etc/nsswitch.conf r,
+  deny /etc/rpc r,
+  deny /etc/udev r,
+  deny /etc/udev/udev.conf r,
+  deny @{HOME}/.kde/share/config/kdeglobals r,
+  deny @{HOME}/.kde/share/config/kioslaverc r,
+  deny @{HOME}/.kde/share/config/kdebugrc r,
+  deny @{HOME}/.kde/share/config/ktimezonedrc r,
+  deny @{PROC}/mounts r,
+
+  @{HOME}/ r,
+  
+  # Pictures must be in the HOME directory,
+  @{HOME}* r,
+  # or in ~/Pictures if the directory is created.
+  @{HOME}/Pictures/** r,
+  
+  @{HOME}/Desktop/.directory r,
+  @{HOME}/.thumbnails/** rwk,
+  @{HOME}/.kde/share/apps/kfileplaces/bookmarks.xml rwk,
+  @{HOME}/.kde/share/config/gwenview* rwk,
+  @{HOME}/.kde/share/apps/gwenview/recentfolders/ r,
+  @{HOME}/.kde/share/apps/gwenview/recentfolders/* rwk,
+  @{HOME}/.kde/share/apps/gwenview/recenturls/ r,
+
+  /usr/bin/gwenview rix,
+  /usr/bin/update-mime-database rix,
+
+  /usr/share/kde4/apps/gwenview/** r,
+  /usr/share/kde4/config/** rk,
+  /usr/share/locale/ r,
+  /usr/share/pkgconfig/shared-mime-info.pc r,
+
+}
