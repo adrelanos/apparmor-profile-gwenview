@@ -19,12 +19,12 @@
   deny @{PROC}/mounts r,
 
   @{HOME}/ r,
-  
+
   # Pictures must be in the HOME directory,
   @{HOME}* r,
   # or in ~/Pictures if the directory is created.
   @{HOME}/Pictures/** r,
-  
+
   @{HOME}/Desktop/.directory r,
   @{HOME}/.thumbnails/** rwk,
   @{HOME}/.kde/share/apps/kfileplaces/bookmarks.xml rwk,
