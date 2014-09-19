@@ -40,5 +40,6 @@
   /usr/share/kde4/config/** rk,
   /usr/share/locale/ r,
   /usr/share/pkgconfig/shared-mime-info.pc r,
+  /usr/share/fontconfig/** r,
 
 }
