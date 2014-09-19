@@ -33,6 +33,8 @@
   @{HOME}/.kde/share/apps/gwenview/recentfolders/* rwk,
   @{HOME}/.kde/share/apps/gwenview/recenturls/ r,
 
+  @{PROC}/sys/vm/overcommit_memory r,
+
   /usr/bin/gwenview rix,
   /usr/bin/update-mime-database rix,
 
@@ -40,5 +42,6 @@
   /usr/share/kde4/config/** rk,
   /usr/share/locale/ r,
   /usr/share/pkgconfig/shared-mime-info.pc r,
+  /usr/share/fontconfig/** r,
 
 }
