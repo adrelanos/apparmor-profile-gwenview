@@ -1,0 +1,145 @@
+commit b0f582a97444ce658e0a6285ed49efcd1aedfcbf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:40:30 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit d717fe6c5d7ffe24d663787e2e65a0de01a00c13
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:58:36 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit 68b6fe066fdf0ac9925a1976164544a8867e3c93
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:33:34 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit 1159a1b9a9e972d6afdde73a01e61c704228afa7
+Merge: 508093f f21bb4c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 5 20:41:27 2015 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit f21bb4c3837be047d6e7f299862257faee5bdaca
+Author: troubadoour <trobador@riseup.net>
+Date:   Mon Jan 5 20:32:56 2015 +0000
+
+    some locked masks required
+
+commit 508093f8fd9c5e19aae1e65edf1a391c33ac4aec
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 19:01:09 2014 +0000
+
+    updated generic makefile
+
+commit a028c16ee93c318f8ce83d38cd058338a33e2dfb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 28 22:35:17 2014 +0000
+
+    makefile: refactoring, avoid using IFS
+
+commit 01513f535fb8995c13e98d4ac5f43c7959b8ec61
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 25 01:58:50 2014 +0000
+
+    makefile:
+    - make debdist; make undebdist
+    - cleanup
+    - refactoring
+
+commit c0cdc0244fc6e878b29158820b0c0431c6b40364
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 23 22:43:01 2014 +0000
+
+    makefile:
+    - new target "make undist", which deletes the upstream tarball
+    - $DISTDIR variable for make (un)dist, which defaults to ".." and can be used to create upstream tarballs in arbitrary locations
+    - refactoring, all function names and global variables now start with "make_" to make the script `source`ing friendly
+    - made `source`able
+
+commit 7078d2465ff6facb2d8fc3962f3fe5e3f93dcb60
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 13 12:36:51 2014 +0000
+
+    readme
+
+commit e494400b55fb09a36127aa2740666f028246c624
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 25 19:03:15 2014 +0000
+
+    bumped version number
+
+commit 5ba069946e36fa1e432c7defa13b593adcb86b0b
+Merge: 2c2034e 9272818
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 25 19:03:00 2014 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit 927281881d3c1e49b466a25bd2cb75445b2f7442
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Sep 25 11:05:12 2014 +0000
+
+    Permissions to standard HOME directories
+    and some DENIED messages.
+    + /usr/share/poppler/
+    + /home/user/.local/share/user-places.xbel
+
+commit 2c2034e7727eed29fc4aff5f38bdff3ca30f14c9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 20 09:04:50 2014 +0000
+
+    bumped version number
+
+commit 8ebc4b5c851d94cdbb7bf7c94fe6264e3c13562e
+Merge: be0eaea 2ddbc1e
+Author: troubadoour <trobador@riseup.net>
+Date:   Sat Sep 20 04:22:47 2014 +0000
+
+    Merge branch 'master' of https://github.com/Whonix/apparmor-profile-gwenview
+
+commit be0eaea72ef897deac3e310f61cba4cb4ea3b676
+Author: troubadoour <trobador@riseup.net>
+Date:   Fri Sep 19 21:56:50 2014 +0000
+
+    + @{PROC}/sys/vm/overcommit_memory
+
+commit 2ddbc1eb09c9aa0786934fb7515cf184d8fc4149
+Merge: 0da933e 640934f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 19 19:57:26 2014 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit 640934f51729575fe57b7e83a7f4e9a866a81a68
+Author: troubadoour <trobador@riseup.net>
+Date:   Fri Sep 19 19:45:33 2014 +0000
+
+    + /usr/share/fontconfig
+
+commit 0da933eb925a0962c89a85867238c0b0b065553c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 18 21:56:06 2014 +0000
+
+    removed trailing spaces
+
+commit cc7743666daf1244eca914cc4803ed1debf5f3c6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 18 21:55:22 2014 +0000
+
+    added .gitattributes
+
+commit a4b50214e9f8a33f8c3e15e30dc4919c19747d19
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Sep 18 20:51:40 2014 +0000
+
+    date, package name
+
+commit aeedf38420f7ba1d3aee46ec636da26564875c1d
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Sep 18 20:41:24 2014 +0000
+
+    initial release
