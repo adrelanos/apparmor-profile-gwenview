@@ -1,3 +1,9 @@
+apparmor-profile-gwenview (3:0.6-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 04 Feb 2015 00:51:39 +0000
+
 apparmor-profile-gwenview (3:0.5-1) unstable; urgency=low
 
   * New upstream version.
