@@ -41,6 +41,10 @@
   @{HOME}/.local/share/user-places.xbel r,
 
   @{PROC}/sys/vm/overcommit_memory r,
+  @{PROC}/sys/devices/system/cpu/ r,
+  @{PROC}/sys/devices/system/cpu/** r,
+  @{PROC}/[0-9]*/cmdline r,
+  @{PROC}/[0-9]*/fd/ r,
 
   /usr/bin/gwenview rix,
   /usr/bin/update-mime-database rix,
@@ -52,4 +56,10 @@
   /usr/share/fontconfig/** r,
   /usr/share/poppler/** r,
 
+  ## TODO: might be possible / make sense to deny those
+  /etc/xdg/Trolltech.conf rk,
+  /var/lib/dbus/machine-id r,
+  /etc/machine-id r,
+
+  /usr/bin/dbus-launch rix,
 }
