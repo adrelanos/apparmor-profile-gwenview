@@ -17,6 +17,10 @@
   deny @{HOME}/.kde/share/config/kdebugrc r,
   deny @{HOME}/.kde/share/config/ktimezonedrc r,
   deny @{PROC}/mounts r,
+  deny /sys/devices/** r,
+
+  ## File indexing. Strange location.
+  /baloo-xattr-check-* rwk,
 
   @{HOME}/ r,
 
@@ -35,16 +39,19 @@
   @{HOME}/.kde/share/apps/kfileplaces/bookmarks.xml rwk,
   @{HOME}/.kde/share/apps/gwenview/ rwk,
   @{HOME}/.kde/share/config/gwenview* rwk,
+  @{HOME}/.kde/share/config/oxygenrc r,
   @{HOME}/.kde/share/apps/gwenview/recentfolders/ rwk,
   @{HOME}/.kde/share/apps/gwenview/recentfolders/* rwk,
   @{HOME}/.kde/share/apps/gwenview/recenturls/ r,
   @{HOME}/.local/share/user-places.xbel r,
+  @{HOME}/baloo-xattr-check-* rwk,
 
   @{PROC}/sys/vm/overcommit_memory r,
   @{PROC}/sys/devices/system/cpu/ r,
   @{PROC}/sys/devices/system/cpu/** r,
   @{PROC}/[0-9]*/cmdline r,
   @{PROC}/[0-9]*/fd/ r,
+
 
   /usr/bin/gwenview rix,
   /usr/bin/update-mime-database rix,
