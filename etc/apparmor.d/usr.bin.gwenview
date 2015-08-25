@@ -19,7 +19,7 @@
   deny @{PROC}/mounts r,
   deny /sys/devices/** r,
 
-  ## ??
+  ## File indexing. Strange location.
   /baloo-xattr-check-* rwk,
 
   @{HOME}/ r,
