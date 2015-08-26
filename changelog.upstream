@@ -1,3 +1,28 @@
+commit 57828a2c8644a2f8a33ad1e21c6565804ab169bd
+Merge: 3b102c3 6db18d1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 25 21:41:54 2015 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit 6db18d1da810fca0634bd6c846775d966a965c49
+Author: troubadoour <trobador@riseup.net>
+Date:   Tue Aug 25 19:20:28 2015 +0000
+
+    comments
+
+commit 09cb726146f6d3833170b3fcf5d83543305de2b0
+Author: troubadoour <trobador@riseup.net>
+Date:   Tue Aug 25 18:25:23 2015 +0000
+
+    additions for Whonix 11.
+
+commit 3b102c3d7ba004be377a9ee0fa65f5895be3fe64
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 25 14:07:50 2015 +0000
+
+    bumped changelog version
+
 commit afef0e44bb8cc0eff4e2ed0b53ebe2e709efa85b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 24 17:47:15 2015 +0000
