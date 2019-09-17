@@ -1,3 +1,9 @@
+apparmor-profile-gwenview (3:2.7-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 17 Sep 2019 13:39:45 +0000
+
 apparmor-profile-gwenview (3:2.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
