@@ -69,4 +69,7 @@
   /etc/machine-id r,
 
   /usr/bin/dbus-launch rix,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.sbin.kloak>
 }
